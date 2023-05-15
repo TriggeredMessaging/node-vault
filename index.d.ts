@@ -4,8 +4,6 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
-import * as request from "request";
-
 declare namespace NodeVault {
     interface Option {
         [p: string]: any;
@@ -123,6 +121,7 @@ declare namespace NodeVault {
         encryptData(options?: Option): Promise<any>;
         decryptData(options?: Option): Promise<any>;
         generateDatabaseCredentials(options?: Option): Promise<any>;
+        unwrap(options?: Option): Promise<any>;
     }
 
     interface VaultOptions {
